@@ -1,52 +1,41 @@
-# Title
+# Microsoft Movie Analysis
 
-**Authors**: Student1, Student2
+**Author**: Samantha Knee
 
 ## Overview
 
-A one-paragraph overview of the project, including the business problem, data, methods, results and recommendations.
+This project analyzes the IMDB and Box Office Mojo databases, in order to provide recommendations to the new Microsoft studio. Descriptive analysis of the data shows that animation movies and movies released in November provide the strongest return on investment (ROI), and Anthony and Joe Russo direct the highest grossing films. Microsoft's executives can use these recommendations to decide what genres of film to make, when to release the films, and who to hire as directors.
 
 ## Business Problem
 
-Summary of the business problem you are trying to solve, and the data questions that you plan to answer in order to solve them.
+Microsoft has decided to create a new movie studio, however, they do not have any business experience in running a successful movie business. Microsoft needs concrete recommendations on releasing films that will have the highest chance of having high grossings or strong ROI, with ROI being especially important. ROI takes into account both the success of the movie at the box office and the initial investment into the movie, an important consideration for a new business line. 
 
-***
-Questions to consider:
-* What are the business's pain points related to this project?
-* How did you pick the data analysis question(s) that you did?
-* Why are these questions important from a business perspective?
+The data questions answered in this analysis include:
+- What movie genre generates the highest ROI?
+- What release month generates the highest ROI?
+- Which directors generate the highest grossings?
+
+The financial investment into a movie varies greatly by genre, so analyzing genre is a simple way to narrow what Microsoft should focus on. Deciding on release month and which directors to hire are also simple decisions that can set the new studio up for success.
+
 ***
 
 ## Data
 
+The data used for this analysis comes from IMDb, the internet movie database, and Box Office Mojo, a database of production budgets and domestic and worldwide grossings. IMDb is the most comprehensive movie database available, which includes details such as film genre, release date, runtime, and the names and roles of all principals of the films, coming from all major movie studios Microsoft will be competing with. Each movie has a unique indentifier used throughout the data sets. The dependent variables targeted in this analysis include ROI and worldwide grossing, while the independent variables are categorical data--genre, release date and director name. 
+
 Describe the data being used for this project.
 
-***
-Questions to consider:
-* Where did the data come from, and how do they relate to the data analysis questions?
-* What do the data represent? Who is in the sample and what variables are included?
-* What is the target variable?
-* What are the properties of the variables you intend to use?
 ***
 
 ## Methods
 
-Describe the process for analyzing or modeling the data. For Phase 1, this will be descriptive analysis.
+This project uses descriptive analysis in order to determine the qualities of the most successful movies. It provides an overview of how Microsoft should produce its movies to produce the most financial success. 
 
-***
-Questions to consider:
-* How did you prepare, analyze or model the data?
-* Why is this approach appropriate given the data and the business problem?
 ***
 
 ## Results
 
-Present your key results. For Phase 1, this will be findings from your descriptive analysis.
-
-***
-Questions to consider:
-* How do you interpret the results?
-* How confident are you that your results would generalize beyond the data you have?
+Animation movies generate the highest ROI of all popular film genres, with adventure and action movies shortly behind. Animation movies also require less upfront investment than adventure and action movies. 
 ***
 
 Here is an example of how to embed images from your sub-folder:
@@ -54,22 +43,39 @@ Here is an example of how to embed images from your sub-folder:
 ### Visual 1
 ![graph1](./images/viz1.png)
 
+Movies released in the month of November have the highest ROI, although movies released in May have the highest worldwide grossing.
+
+### Visual 2
+![graph1](./images/viz1.png)
+
+Directors who experience the strongest total worldwide grossing include Anthony and Joe Russo, directors of Avengers films and other superhero movies. Christopher Nolan's films also make him one of the highest grossing directors.
+
+### Visual 2
+![graph1](./images/viz1.png)
+
+
 ## Conclusions
 
-Provide your conclusions about the work you've done, including any limitations or next steps.
+Based on this analysis, there are three recommendations for the Microsoft movie studio:
+* **Focus on producing animation films.** Animation films have the highest ROI with the lowest upfront investment, so this could be a good starting genre for Microsoft before they start generating revenue.
+* **Release movies in the month of November.** Movies released at the beginning of the holiday season are most likely to have a high ROI.
+* **Hire the Russo brothers or Christopher Nolan as directors.** These directors have had the most career success overall based on total movie grossing.
+
 
 ***
-Questions to consider:
-* What would you recommend the business do as a result of this work?
-* What are some reasons why your analysis might not fully solve the business problem?
-* What else could you do in the future to improve this project?
-***
+## Next Steps
+
+Further analyses could provide additional recommendations to Microsoft. These next steps could be completed using the current data set:
+* **Which actors are in the highest grossing film.** This analysis could determine if a movie's grossing is more dependent on its directors or its actors.
+* **How secondary genres affect ROI.** This analyis could explore which genre combination creates the most successful movies.
+* **How ratings are related to ROI.** This analysis could investigate how important for returns is it that a movie has high ratings, and if this varies by genre.
+
 
 ## For More Information
 
-Please review our full analysis in [our Jupyter Notebook](./dsc-phase1-project-template.ipynb) or our [presentation](./DS_Project_Presentation.pdf).
+Please review the full analysis in this [Jupyter Notebook](./dsc-phase1-project-template.ipynb) or this [presentation](./DS_Project_Presentation.pdf).
 
-For any additional questions, please contact **name & email, name & email**
+For any additional questions, please contact **Samantha Knee at samanthaknee24@gmail.com**
 
 ## Repository Structure
 
@@ -77,6 +83,7 @@ Describe the structure of your repository and its contents, for example:
 
 ```
 ├── README.md                           <- The top-level README for reviewers of this project
+├── dsc-phase1-project-template.ipynb   <- Narrative documentation of data cleaning in Jupyter notebook
 ├── dsc-phase1-project-template.ipynb   <- Narrative documentation of analysis in Jupyter notebook
 ├── DS_Project_Presentation.pdf         <- PDF version of project presentation
 ├── data                                <- Both sourced externally and generated from code
