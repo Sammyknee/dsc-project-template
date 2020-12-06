@@ -41,17 +41,17 @@ Animation movies generate the highest ROI of all popular film genres, with adven
 Here is an example of how to embed images from your sub-folder:
 
 ### Visual 1
-![graph1](./images/viz1.png)
+![graph1](./images/ROI_by_genre.png)
 
 Movies released in the month of November have the highest ROI, although movies released in May have the highest worldwide grossing.
 
 ### Visual 2
-![graph1](./images/viz1.png)
+![graph1](./images/ROI_by_release.png)
 
 Directors who experience the strongest total worldwide grossing include Anthony and Joe Russo, directors of Avengers films and other superhero movies. Christopher Nolan's films also make him one of the highest grossing directors.
 
 ### Visual 2
-![graph1](./images/viz1.png)
+![graph1](./images/top_directors.png)
 
 
 ## Conclusions
@@ -73,7 +73,7 @@ Further analyses could provide additional recommendations to Microsoft. These ne
 
 ## For More Information
 
-Please review the full analysis in this [Jupyter Notebook](./dsc-phase1-project-template.ipynb) or this [presentation](./DS_Project_Presentation.pdf).
+Please review the full analysis in this [Jupyter Notebook](./movie-data-analysis.ipynb) or this [presentation](./DS_Project_Presentation.pdf).
 
 For any additional questions, please contact **Samantha Knee at samanthaknee24@gmail.com**
 
@@ -84,7 +84,7 @@ Describe the structure of your repository and its contents, for example:
 ```
 ├── README.md                           <- The top-level README for reviewers of this project
 ├── dsc-phase1-project-template.ipynb   <- Narrative documentation of data cleaning in Jupyter notebook
-├── dsc-phase1-project-template.ipynb   <- Narrative documentation of analysis in Jupyter notebook
+├── movie-data-analysis.ipynb           <- Narrative documentation of analysis in Jupyter notebook
 ├── DS_Project_Presentation.pdf         <- PDF version of project presentation
 ├── data                                <- Both sourced externally and generated from code
 └── images                              <- Both sourced externally and generated from code
