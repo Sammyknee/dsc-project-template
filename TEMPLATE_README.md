@@ -1,5 +1,8 @@
 # Microsoft Movie Analysis
 
+
+![popcorn](images/popcorn.jpg)
+
 **Author**: Samantha Knee
 
 ## Overview
