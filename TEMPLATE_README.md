@@ -4,11 +4,11 @@
 
 ## Overview
 
-This project analyzes the IMDB and Box Office Mojo databases, in order to provide recommendations to the new Microsoft studio. Descriptive analysis of the data shows that animation movies and movies released in November provide the strongest return on investment (ROI), and Anthony and Joe Russo direct the highest grossing films. Microsoft's executives can use these recommendations to decide what genres of film to make, when to release the films, and who to hire as directors.
+This project analyzes IMDB and other movie databases in order to provide recommendations to the new Microsoft studio. Descriptive analysis of the data shows that animation movies and movies released in June provide the strongest return on investment (ROI). Anthony and Joe Russo and Christopher Nolan direct the highest grossing films, while Kevin Johnson and Jun Falkenstein direct the highest grossing animation films. Microsoft's executives can use these recommendations to decide what genres of film to make, when to release the films, and who to hire as directors.
 
 ## Business Problem
 
-Microsoft has decided to create a new movie studio, however, they do not have any business experience in running a successful movie business. Microsoft needs concrete recommendations on releasing films that will have the highest chance of having high grossings or strong ROI, with ROI being especially important. ROI takes into account both the success of the movie at the box office and the initial investment into the movie, an important consideration for a new business line. 
+Microsoft has decided to create a new movie studio, however, they do not have any business experience in running a successful movie business. Microsoft needs concrete recommendations on releasing films that will have the highest chance of high worldwide grossing or strong ROI, with ROI being especially important. ROI takes into account both the success of the movie at the box office and the initial investment into the movie, an important consideration for a new business line. 
 
 The data questions answered in this analysis include:
 - What movie genre generates the highest ROI?
@@ -21,44 +21,42 @@ The financial investment into a movie varies greatly by genre, so analyzing genr
 
 ## Data
 
-The data used for this analysis comes from IMDb, the internet movie database, and Box Office Mojo, a database of production budgets and domestic and worldwide grossings. IMDb is the most comprehensive movie database available, which includes details such as film genre, release date, runtime, and the names and roles of all principals of the films, coming from all major movie studios Microsoft will be competing with. Each movie has a unique indentifier used throughout the data sets. The dependent variables targeted in this analysis include ROI and worldwide grossing, while the independent variables are categorical data--genre, release date and director name. 
-
-Describe the data being used for this project.
+The data used for this analysis comes primarily from IMDb, the most comprehensive movie database available, which includes details such as film genre, release date, runtime, and the names and roles of all principals of the films. It includes data from all major movie studios whom Microsoft will be competing with. Each movie has a unique indentifier used throughout the data sets. The dependent variables targeted in this analysis include ROI and worldwide grossing, while the independent variables are genre, release date and director name. 
 
 ***
 
 ## Methods
 
-This project uses descriptive analysis in order to determine the qualities of the most successful movies. It provides an overview of how Microsoft should produce its movies to produce the most financial success. 
+This project uses descriptive analysis in order to determine the qualities of the most successful movies. It provides an overview of how Microsoft should produce its movies to produce the most financial success. In order to properly analyze the data, certain missing values and duplicates were removed from the initial data set. The datatypes of numerical columns were changed to numbers so they could be properly manipulated and used to create new columns, such as ROI. Data tables were also merged together and extreme outliers were removed.
 
 ***
 
 ## Results
 
 Animation movies generate the highest ROI of all popular film genres, with adventure and action movies shortly behind. Animation movies also require less upfront investment than adventure and action movies. 
-***
 
-Here is an example of how to embed images from your sub-folder:
 
-### Visual 1
 ![graph1](./images/ROI_by_genre.png)
 
-Movies released in the month of November have the highest ROI, although movies released in May have the highest worldwide grossing.
+***
 
-### Visual 2
-![graph1](./images/ROI_by_release.png)
+Movies released in the month of June have the highest ROI, and movies released in Q2 have the highest ROI on average compared to other quarters.
 
-Directors who experience the strongest total worldwide grossing include Anthony and Joe Russo, directors of Avengers films and other superhero movies. Christopher Nolan's films also make him one of the highest grossing directors.
 
-### Visual 2
-![graph1](./images/top_directors.png)
+![graph2](./images/ROI_by_release.png)
+
+Directors who experience the strongest total worldwide grossing include Anthony and Joe Russo, directors of Avengers films and other superhero movies. Christopher Nolan's films also make him one of the highest grossing directors. When it comes to animation movies specifically, Kevin Johnson's and Jun Falkenstein's films have the highest total grossing.
+
+
+![graph3](./images/top_directors.png)
+![graph4](./images/top_animation_directors.png)
 
 
 ## Conclusions
 
 Based on this analysis, there are three recommendations for the Microsoft movie studio:
 * **Focus on producing animation films.** Animation films have the highest ROI with the lowest upfront investment, so this could be a good starting genre for Microsoft before they start generating revenue.
-* **Release movies in the month of November.** Movies released at the beginning of the holiday season are most likely to have a high ROI.
+* **Release movies in the month of June.** Movies released before the summer season begins are most likely to have a high ROI.
 * **Hire the Russo brothers or Christopher Nolan as directors.** These directors have had the most career success overall based on total movie grossing.
 
 
@@ -79,11 +77,10 @@ For any additional questions, please contact **Samantha Knee at samanthaknee24@g
 
 ## Repository Structure
 
-Describe the structure of your repository and its contents, for example:
 
 ```
 ├── README.md                           <- The top-level README for reviewers of this project
-├── dsc-phase1-project-template.ipynb   <- Narrative documentation of data cleaning in Jupyter notebook
+├── movie-data-cleaning.ipynb           <- Narrative documentation of data cleaning in Jupyter notebook
 ├── movie-data-analysis.ipynb           <- Narrative documentation of analysis in Jupyter notebook
 ├── DS_Project_Presentation.pdf         <- PDF version of project presentation
 ├── data                                <- Both sourced externally and generated from code
