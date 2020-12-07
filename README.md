@@ -1,71 +1,96 @@
-# Phase 1 Project Template - Minimum Viable Product (MVP)
+# Microsoft Movie Analysis
 
-![blueprint](images/blueprint.png)
 
-This repository is like a blueprint, providing structure for your first End of Phase Project. We suggest you base your Phase 1 project off of this repository so you can focus less on formatting and organization, and more on the _analysis and communication skills_ that will support your progress through the course. This template is designed to make your project portfolio-ready in order to impress the future employers who will review it. 
+![popcorn](images/popcorn.jpg)
 
-## Repository Contents
+**Author**: Samantha Knee
 
-Below is a list of the contents of this repository - instructions for using them are in the next section.
+## Overview
 
-- `README.md`: The README for this repo branch explaining it's contents - you're reading it now
-- `TEMPLATE_README.md`: An example of a project README that provides a brief overview of your whole project
-- `dsc-phase1-project-template.ipynb`: A starter Jupyter Notebook with headings, code examples and guiding questions
-- `DS_Project_Presentation_Template.pdf`: A starter slide deck presenting your project - here is an [editable version](https://docs.google.com/presentation/d/1PaiH1bleXnhiPjTPsAXQSiAK0nkaRlseQIr_Yb-0mz0/copy)
-- `data` folder: A folder for the data you reference with your code
-- `images` folder: A folder for the images you reference in your files 
-- `.gitignore`: A hidden file that tells git to not track certain files and folders
-
-## Instructions For Using This Repository
-
-### Fork This Repository
-
-**For a group project**, have only one team member do these steps:
-
-1. Fork this repository to your personal account
-   - In GitHub, go to this repository and click the "Fork" button in the upper right
-   
-2. Change the name of your fork of this repo to a _descriptive_ name of your choosing
-   - In GitHub, go to your fork of this repo -> "Settings" -> "Options" -> "Repository Name" -> "Rename"
-   - Make the name descriptive, since potential employers will read it. Ex: "Microsoft-Movie-Analysis" is better than "Project-1"
-
-3. Use `git clone` to clone your fork of this repo to your local computer
-
-4. **For a group project**, add team members as collaborators to your fork of this repo
-   - In GitHub, go to your fork of this repo -> "Settings" -> "Manage Access" -> "Invite Teams or People"
-   - Add your project team members as collaborators & send them the repo GitHub URL
-
-### Work In Your Fork Of This Repository
-
-- Work in the repo clone that you created on your local machine
-- Start writing and coding in the Jupyter Notebook `dsc-phase1-project-template.ipynb`
-- Fill in the README template in `TEMPLATE_README.md`
-- Use `git add`, `git commit`, and `git push` often to update your repo in GitHub
-   - For a refresher on how to do this and why it's important, review Topic 2: Bash and Git
-
-### Use The Slide Template
-
-1. Go to [this link](https://docs.google.com/presentation/d/1PaiH1bleXnhiPjTPsAXQSiAK0nkaRlseQIr_Yb-0mz0/copy) to make an editable copy of the slide deck in your own Google Drive account
-2. Go to "Slide," select "Change Theme," and pick a theme you like so your presentation doesn't look like everyone else's
-3. **For a group project**, click the "Share" button and add your teammates as editors
-
-### Tidy Up Your Project
-
-- Change the file name of the Jupyter Notebook (`dsc-phase1-project-template.ipynb`) to something more descriptive
-- Save an appropriately-named PDF version of your slide deck to the repository
-- Rename the template readme you've been working in by running `git mv TEMPLATE_README.md README.md`
-- Delete unnecessary files from the repo using `git rm`
-   - The presentation PDF: `DS_Project_Presentation_Template.pdf`
-   - This README file: `README.md`
-   - Any unused data files in the `data` folder
-   - Any unused images in the `images` folder
-
-### Submit Your Project
-
-To submit your project, please follow the instructions in the "Project Submission & Review" page in the Milestones course.
+This project analyzes IMDb and other movie databases in order to provide recommendations to the new Microsoft studio. Descriptive analysis of the data shows that animation movies and movies released in June provide the strongest return on investment (ROI). Anthony and Joe Russo and Christopher Nolan direct the highest grossing films, while Kevin Johnson and Jun Falkenstein direct the highest grossing animation films. Microsoft's executives can use these recommendations to decide what genres of film to make, when to release the films, and who to hire as directors.
 
 ***
-### Notes
 
-- The visualizations in the notebook use best practices for visualization that you should try to emulate. For example, they have clear axes, descriptive titles, and appropriate number formatting
-- The `dsc-phase1-project-template.ipynb` is intended to be the _final version_ of your project. The first notebook you create will not look like this. You are encouraged to start with a very disorderly notebook and clean it as you go
+## Business Problem
+
+Microsoft has decided to create a new movie studio, however, they do not have any business experience in running a successful movie business. Microsoft needs concrete recommendations on releasing films that will have the highest chance of financial success, with ROI being especially important. ROI takes into account both the success of the movie at the box office and the initial investment into the movie, an important consideration for a new business line. 
+
+The data questions answered in this analysis include:
+- What movie genre generates the highest ROI?
+- What release month generates the highest ROI?
+- Which directors generate the highest grossings?
+
+The financial investment into a movie varies greatly by genre, so analyzing genre is a simple way to narrow what Microsoft should focus on. Deciding on release month and which directors to hire are also simple decisions that can set the new studio up for success.
+
+***
+
+## Data
+
+The data used for this analysis comes primarily from IMDb, the most comprehensive movie database available, which includes details such as film genre, release date, runtime minutes, and the names and roles of all principals of the films. It includes data from all major movie studios whom Microsoft will be competing with. Each movie has a unique indentifier used throughout the data sets. The dependent variables targeted in this analysis include ROI and worldwide grossing, while the independent variables are genre, release date and director name. 
+
+***
+
+## Methods
+
+This project uses descriptive analysis in order to determine the qualities of the most successful movies. It provides an overview of how Microsoft should produce its movies to produce the most financial success. In order to properly analyze the data, certain missing values and duplicates were removed from the initial data set. The datatypes of numerical columns were changed to numbers so they could be properly manipulated and used to create new columns, such as ROI. Data tables were also merged together and extreme outliers were removed.
+
+***
+
+## Results
+
+Animation movies generate the highest ROI of all popular film genres, with adventure and action movies also producing strong ROI results. Animation movies also require less upfront investment than adventure and action movies. 
+
+
+![graph1](./images/ROI_by_genre.png)
+
+***
+
+Movies released in the month of June have the highest ROI, and movies released in Q2 have the highest ROI on average compared to other quarters.
+
+
+![graph2](./images/ROI_by_release.png)
+
+***
+
+Directors who experience the strongest total worldwide grossing include Anthony and Joe Russo, directors of Avengers films and other superhero movies. Christopher Nolan's films also make him one of the highest grossing directors. When it comes to animation movies specifically, Kevin Johnson's and Jun Falkenstein's films have the highest total grossing.
+
+
+![graph3](./images/directors_by_grossing.png)
+
+
+## Conclusions
+
+Based on this analysis, there are three recommendations for the Microsoft movie studio:
+* **Focus on producing animation films.** Animation films have the highest ROI with the lowest upfront investment, so this could be a strong genre for Microsoft to start with before the studio begins generating revenue.
+* **Release movies in the month of June.** Movies released before the summer season begins are most likely to have a high ROI.
+* **Hire the Russo brothers, Christopher Nolan or Kevin Johnson and Jun Falkenstein as directors.** The Russo brothers and Christopher Nolan have had the most career success overall based on total movie grossing, while Kevin Johnson and Jun Falkenstein have had the highest grossing as directors of animation films.
+
+
+***
+## Next Steps
+
+Further analyses could provide additional recommendations to Microsoft. These next steps could be completed using the current data set:
+* **Which actors are in the highest grossing film.** This analysis could determine if a movie's grossing is more dependent on its directors or its actors.
+* **How secondary genres affect ROI.** This analyis could explore which genre combination creates the most successful movies.
+* **How movie length is related to ROI.** This analysis could investigate how runtime minutes can affect ROI, and if this varies by genre.
+
+
+## For More Information
+
+Please review the full analysis in this [Jupyter Notebook](./movie-data-analysis.ipynb) or this [presentation](./Movie_Analysis_Presentation.pdf).
+
+For any additional questions, please contact **Samantha Knee at samanthaknee24@gmail.com**
+
+![curtain](images/curtain.jpg)
+
+## Repository Structure
+
+
+```
+├── README.md                           <- The top-level README for reviewers of this project
+├── movie-data-cleaning.ipynb           <- Narrative documentation of data cleaning in Jupyter notebook
+├── movie-data-analysis.ipynb           <- Narrative documentation of analysis in Jupyter notebook
+├── Movie_Analysis_Presentation.pdf     <- PDF version of project presentation
+├── data                                <- Both sourced externally and generated from code
+└── images                              <- Both sourced externally and generated from code
+```
