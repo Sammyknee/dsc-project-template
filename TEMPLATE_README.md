@@ -69,7 +69,7 @@ Based on this analysis, there are three recommendations for the Microsoft movie 
 Further analyses could provide additional recommendations to Microsoft. These next steps could be completed using the current data set:
 * **Which actors are in the highest grossing film.** This analysis could determine if a movie's grossing is more dependent on its directors or its actors.
 * **How secondary genres affect ROI.** This analyis could explore which genre combination creates the most successful movies.
-* **How ratings are related to ROI.** This analysis could investigate how important for returns is it that a movie has high ratings, and if this varies by genre.
+* **How movie length is related to ROI.** This analysis could investigate how runtime minutes can affect ROI, and if this varies by genre.
 
 
 ## For More Information
