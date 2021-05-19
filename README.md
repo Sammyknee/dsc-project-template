@@ -26,7 +26,7 @@ The financial investment into a movie varies greatly by genre, so analyzing genr
 
 ## Data
 
-The data used for this analysis comes primarily from IMDb, the most comprehensive movie database available, which includes details such as film genre, release date, runtime minutes, and the names and roles of all principals of the films. It includes data from all major movie studios whom Microsoft will be competing with. Each movie has a unique indentifier used throughout the data sets. The dependent variables targeted in this analysis include ROI and worldwide grossing, while the independent variables are genre, release date and director name. 
+The data used for this analysis comes primarily from IMDb, the most comprehensive movie database available, which includes details such as film genre, release date, runtime minutes, and the names and roles of all principals of the films. It includes data from all major movie studios whom Microsoft will be competing with. Each movie has a unique identifier used throughout the data sets. The dependent variables targeted in this analysis include ROI and worldwide grossing, while the independent variables are genre, release date and director name. 
 
 ***
 
